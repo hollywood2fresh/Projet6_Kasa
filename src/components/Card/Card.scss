@@ -1,0 +1,20 @@
+.card {
+    width: 340px;
+    height: 340px;
+    font-size: 18px;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ffffff00 59%, #000000 100%);
+    &--picture {
+        object-fit: cover;
+        border-radius: 10px;
+        height: 100%;
+        opacity: 0.7;
+    }
+    &--title {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: #FFF;
+    }
+}
