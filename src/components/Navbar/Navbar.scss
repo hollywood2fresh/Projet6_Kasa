@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.navbar {
+    height: 68px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--list {
+        width:180px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: $primary-color;
+    }
+}
+
+.activeLinkNavbar {
+    text-decoration : underline;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar--list {
+        width:150px;
+    }
+}

@@ -1,0 +1,29 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:border-box}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 0 100px;
+    min-width: 450px;
+}
+
+header, main {
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Variables
+
+$primary-color: #FF6060;
+$secondary-color: #F7F7F7;
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+}
