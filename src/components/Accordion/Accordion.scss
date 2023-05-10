@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+.accordion {
+    background-color: $secondary-color;
+    border-radius: 10px;
+    &--visible {
+        color: #FFF;
+        background-color: $primary-color;
+        height: 52px;
+        border-radius: 10px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            font-size: 24px;
+        }
+    }
+    &--toggle {
+        padding: 30px 20px 20px 20px;
+        color: $primary-color;
+    }
+    .toggleNone {
+        display: none;
+    }
+    .chevronNone {
+        display: none;
+    }
+}
+
+.locale {
+    font-size: 18px; // change into different page => 24px
+}
+.propos {
+    font-size: 24px;
+}
+.locateToggle {
+    height: 245px; // change into different page => fit-content
+
+}
+.proposToggle {
+    height: fit-content;
+}
