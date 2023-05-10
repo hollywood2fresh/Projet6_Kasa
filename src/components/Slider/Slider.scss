@@ -1,0 +1,34 @@
+.slider {
+    height: 415px;
+    border: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &--picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &--pagination, i {
+        position: absolute;
+        color: #FFF;
+    }
+    i {
+        font-size: 80px;
+    }
+    .fa-chevron-right {
+        right: 24px;
+    }
+    .fa-chevron-left {
+        left: 24px;
+    }
+    &--pagination {
+        bottom: 25px;
+        font-size: 24px;
+    }
+}
+
+.paginationNone {
+    display: none;
+}
