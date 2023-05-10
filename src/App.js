@@ -3,6 +3,7 @@ import Banner from './components/Banner/Banner'
 import Card from './components/Card/Card'
 import Accordion from './components/Accordion/Accordion'
 import Slider from './components/Slider/Slider'
+import ProfilLocate from './components/ProfilLocate/ProfilLocate'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Card/>
         <Accordion/>
         <Slider/>
+        <ProfilLocate/>
       </header>
       
     </>

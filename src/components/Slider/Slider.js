@@ -32,9 +32,11 @@ export default function Slider() {
 		}
     }
 
+    // Pagination
+
     const paginationTotalSlide = picture.length
     const paginationCurrentSlide = slide + 1
-    
+
     let paginationShow = false
     if(picture.length > 1 ) {
         paginationShow = true
