@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.homeSectionCard {
+    background-color: $secondary-color;
+    border-radius: 25px;
+    padding: 56px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
