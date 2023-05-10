@@ -3,6 +3,9 @@
 .accordion {
     background-color: $secondary-color;
     border-radius: 10px;
+    margin-bottom: 30px;
+    max-width: 1023px;
+    width: 100%;
     &--visible {
         color: #FFF;
         background-color: $primary-color;

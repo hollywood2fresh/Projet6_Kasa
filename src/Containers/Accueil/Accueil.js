@@ -5,8 +5,6 @@ import Card from '../../components/Card/Card'
 import data from '../../logements.json'
 import bannerImg from '../../assets/banner.jpeg'
 
-console.log(data);
-
 export default function Accueil() {
   return (
     <>
