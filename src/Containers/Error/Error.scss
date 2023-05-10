@@ -1,0 +1,27 @@
+@import '../../index.scss';
+
+.errorSection {
+    height: 80vh;
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    &--404 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-weight: 700;
+            font-size: 288px;
+        }
+        p {
+            font-size: 36px;
+        }
+    }
+    &--return {
+        font-size: 18px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
