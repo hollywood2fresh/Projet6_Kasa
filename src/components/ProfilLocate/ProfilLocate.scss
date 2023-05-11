@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     color: $primary-color;
+    margin: 30px 0 10px 0;
     &--infoLogement {
         &--title {
             font-size: 36px;
@@ -15,7 +16,9 @@
         &--tag {
             display: flex;
             > div {
-                width: 115px;
+                width: fit-content;
+                min-width: 115px;
+                padding: 0 10px;
                 height: 25px;
                 font-size: 14px;
                 border-radius: 10px;

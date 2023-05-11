@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import './Accordion.scss'
+import {useLocation} from 'react-router-dom'
 
 
 //      • props •
@@ -9,7 +10,8 @@ import './Accordion.scss'
 
 export default function Accordion(props) {
 
-
+  const location = useLocation()
+  console.log(location);
 
   const [toggle, setToggle] = useState(false)
 

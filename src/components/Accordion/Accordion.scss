@@ -1,7 +1,6 @@
 @import '../../index.scss';
 
 .accordion {
-    background-color: $secondary-color;
     border-radius: 10px;
     margin-bottom: 30px;
     max-width: 1023px;
@@ -20,6 +19,8 @@
         }
     }
     &--toggle {
+        background-color: $secondary-color;
+        border-radius: 0 0 10px 10px;
         padding: 30px 20px 20px 20px;
         color: $primary-color;
     }
@@ -33,9 +34,11 @@
 
 .locale {
     font-size: 18px; // change into different page => 24px
+    line-height: 25px;
 }
 .propos {
     font-size: 24px;
+    line-height: 35px;
 }
 .locateToggle {
     height: 245px; // change into different page => fit-content
