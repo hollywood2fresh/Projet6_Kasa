@@ -47,3 +47,27 @@
 .proposToggle {
     height: fit-content;
 }
+
+@media screen and (max-width: 768px) {
+    .accordion {
+        margin-bottom: 20px;
+        &--visible {
+            height: 30px;
+            i {
+                font-size: 16px;
+            }
+        }
+        &--toggle {
+            padding: 23px 6px 10px 10px;
+        }
+    }
+
+    .propos, .locale {
+        font-size: 12px;
+        line-height: 17px;
+
+    }
+    .locateToggle, .proposToggle {
+        height: 145px;
+    }
+}

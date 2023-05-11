@@ -7,15 +7,37 @@
     background: linear-gradient(to bottom, #ffffff00 59%, #000000 100%);
     margin: 25px;
     &--picture {
+
         object-fit: cover;
         border-radius: 10px;
         height: 100%;
         opacity: 0.7;
     }
     &--title {
+        width: 70%;
         position: absolute;
         bottom: 20px;
         left: 20px;
         color: #FFF;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .card {
+        width: 100%;
+        margin: 20px 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        &--picture {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        height: 255px;  
     }
 }

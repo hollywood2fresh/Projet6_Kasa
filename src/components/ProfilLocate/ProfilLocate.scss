@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     color: $primary-color;
-    margin: 30px 0 10px 0;
+    margin: 30px 0 24px 0;
     &--infoLogement {
         &--title {
             font-size: 36px;
@@ -15,6 +15,7 @@
         }
         &--tag {
             display: flex;
+            flex-wrap: wrap;
             > div {
                 width: fit-content;
                 min-width: 115px;
@@ -22,7 +23,7 @@
                 height: 25px;
                 font-size: 14px;
                 border-radius: 10px;
-                margin: 20px 10px 24px 0px;
+                margin: 20px 10px 0 0px;
                 color: #FFF;
                 background-color: $primary-color;
                 display: flex;
@@ -52,12 +53,12 @@
         }
         &--star {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             font-size: 24px;
             width: 180px;
             color: $star-color;
             i {
-                margin-left: 0 15px;
+                margin-left: 15px;
             }
         }
     }
@@ -65,4 +66,53 @@
 
 .starAdd {
     color: $primary-color;
+}
+
+@media screen and (max-width: 800px) {
+    .profilLocate {
+        flex-direction: column;
+        &--infoLogement {
+            &--title {
+                font-size: 18px;
+            }
+            &--location {
+                margin-top: 15px;
+                font-size: 14px;
+            }
+            &--tag {
+
+                > div {
+                    border-radius: 5px;
+                    font-size: 10px;
+                    min-width: 85px;
+                    height: 18px;
+                }
+            }
+        }
+        &--infoProfil {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+            &--card {
+                margin: 0;
+                p {
+                    width: 70px;
+                    font-size: 12px;
+                }
+                img {
+                    width: 32px;
+                }
+            }
+            &--star {
+                justify-content: flex-start;
+                i {
+                    margin-left: 0;
+                    margin-right: 6px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
 }

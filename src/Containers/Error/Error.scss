@@ -17,11 +17,28 @@
         }
         p {
             font-size: 36px;
+            text-align: center;
         }
     }
     &--return {
         font-size: 18px;
         text-decoration: underline;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .errorSection {
+        &--404 {
+            h1 {
+                font-size: 96px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        &--return {
+            font-size: 14px;
+        }
     }
 }

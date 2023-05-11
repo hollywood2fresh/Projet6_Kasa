@@ -43,10 +43,10 @@ export default function Slider() {
         <img src={pictures[slide]} alt="" className="slider--picture" />
         <i 
         onClick={showPreviousSlide}
-        className="fa-sharp fa-solid fa-chevron-left"></i>
+        className={paginationShow ? "fa-sharp fa-solid fa-chevron-left" : "paginationNone"}></i>
         <i 
         onClick={showNextSlide}
-        className="fa-sharp fa-solid fa-chevron-right"></i>
+        className={paginationShow ? "fa-sharp fa-solid fa-chevron-right" : "paginationNone"}></i>
         <span className={paginationShow ? "slider--pagination" : "paginationNone"}>{paginationCurrentSlide}/{paginationTotalSlide}</span>
     </div>
   )
