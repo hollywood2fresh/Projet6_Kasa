@@ -12,6 +12,7 @@ export default function Accueil() {
     <>
         <header>
             <Banner
+            choiceStyle={'accueil'}
             picture={bannerImg}
             text={'Chez vous, partout et ailleurs'}
             />

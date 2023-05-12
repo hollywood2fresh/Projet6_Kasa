@@ -10,8 +10,7 @@ import {useLocation} from 'react-router-dom'
 
 export default function Accordion(props) {
 
-  const location = useLocation()
-  console.log(location);
+  // const location = useLocation()
 
   const [toggle, setToggle] = useState(false)
 

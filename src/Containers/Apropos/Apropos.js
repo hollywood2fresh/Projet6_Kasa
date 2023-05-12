@@ -10,6 +10,7 @@ export default function Apropos() {
     <>
         <header>
             <Banner
+            choiceStyle={'propos'}
             picture={bannerImg}
             />
         </header>

@@ -7,12 +7,13 @@
     justify-content: space-between;
     align-items: center;
     &--list {
-        width:180px;
+        width:240px; // width:180px;
         display: flex;
         justify-content: space-between;
     }
     a {
         color: $primary-color;
+        font-size: 24px; // 12
     }
 }
 
@@ -23,7 +24,14 @@
 
 
 @media screen and (max-width: 768px) {
-    .navbar--list {
-        width:150px;
+    .navbar {
+        margin: 20px 0;
+        &--list {
+            width:120px;
+            a {
+                font-size: 12px;
+            }
+        }
     }
+
 }

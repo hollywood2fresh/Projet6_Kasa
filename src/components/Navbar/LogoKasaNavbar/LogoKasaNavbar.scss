@@ -3,4 +3,16 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .LogoKasa {
+        width: 190px;
+    }
+    svg {
+        height: 50px;
+    }
 }
