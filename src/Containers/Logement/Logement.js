@@ -10,7 +10,6 @@ import { v4 as uuidv4 } from 'uuid';
 export default function Logement() {
 
   const location = useLocation()
-  console.log(location.state.equipments);
 
   return (
     <>

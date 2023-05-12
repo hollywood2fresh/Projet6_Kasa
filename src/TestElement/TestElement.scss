@@ -1,6 +1,6 @@
-@import '../../index.scss';
+@import '../index.scss';
 
-.accordion {
+.test-accordion {
     max-width: 1023px;
     border-radius: 10px;
     width: 100%;
@@ -30,7 +30,7 @@
         .arrow {
             &--on {
                 opacity: 1;
-                transition: all 1s;
+                transition: all .5s;
             }
             &--off {
                 opacity: 0;
@@ -53,7 +53,7 @@
             }
             &--on {
                 opacity: 1;
-                transition: all 700ms;
+                transition: all 400ms;
             }
             
         }
@@ -69,8 +69,4 @@
 }
 .heightPropos {
     height: fit-content;
-}
-
-.color {
-    background-color: $secondary-color;
 }

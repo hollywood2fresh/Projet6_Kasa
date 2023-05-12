@@ -4,11 +4,6 @@ import Accueil from './Containers/Accueil/Accueil';
 import Logement from './Containers/Logement/Logement'
 import Apropos from './Containers/Apropos/Apropos'
 import Error from './Containers/Error/Error'
-// import Banner from './components/Banner/Banner'
-// import Card from './components/Card/Card'
-// import Accordion from './components/Accordion/Accordion'
-// import Slider from './components/Slider/Slider'
-// import ProfilLocate from './components/ProfilLocate/ProfilLocate'
 
 function App() {
   return (

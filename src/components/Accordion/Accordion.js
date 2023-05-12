@@ -1,16 +1,7 @@
 import {useState} from 'react'
 import './Accordion.scss'
-import {useLocation} from 'react-router-dom'
 
-
-//      • props •
-// choice style : 'locate' / OR / 'propos'
-// title : 'your title'
-// props.children
-
-export default function Accordion(props) {
-
-  // const location = useLocation()
+export default function TestElement(props) {
 
   const [toggle, setToggle] = useState(false)
 
@@ -23,40 +14,46 @@ export default function Accordion(props) {
   // 'locate' for page locate 
   // 'propos' for page A propos
 
-  let recup = props.choiceStyle
-  let changeStyleAccord = recup
-  let changeStyleToggle = recup
+  const recup = props.choiceStyle
+  let fontStyle = ''
+  let heightStyle = ''
 
-  switch (changeStyleAccord) {
+  switch (recup) {
     case 'locate':
-        changeStyleAccord = 'locale';
-        changeStyleToggle = 'locateToggle locale';
+      fontStyle = '__fontLocation';
+      heightStyle = 'heightLocation';
       break;
-
-      case 'propos':
-        changeStyleAccord = 'propos';
-        changeStyleToggle = 'proposToggle propos';
+    
+    case 'propos':
+      fontStyle = '__fontPropos';
+      heightStyle = 'heightPropos';
       break;
-
+  
     default:
-        changeStyleAccord = 'locale';
-        changeStyleToggle = 'locateToggle locale';
+      fontStyle = '__fontLocation';
+      heightStyle = 'heightLocation';
       break;
   }
 
   return (
-    <div className={`accordion ${changeStyleAccord}`}>
-        <div
-        onClick={toggleState}
-        className='accordion--visible'>
-          <h2>{props.title}</h2>
-          <i className={toggle ? 'chevronNone' : 'fa-solid fa-chevron-down'}></i>
-          <i className={toggle ? 'fa-solid fa-chevron-up' : 'chevronNone'}></i>
+
+    <div className={`accordion accordion${fontStyle}`}>
+      
+      <div className={toggle ? "color" : undefined}>
+          <div 
+          onClick={toggleState}
+          className="accordion--visible">
+              <h2>{props.title}</h2>
+              <i className={ toggle ? 'fa-solid fa-chevron-down arrow--off' : 'fa-solid fa-chevron-down arrow--on'}></i>
+              <i className={ toggle ? 'fa-solid fa-chevron-up arrow--on' : 'fa-solid fa-chevron-down arrow--off'}></i>
+          </div>
+      </div>
+
+
+        <div className={toggle ? `accordion--toggle ${heightStyle}` : `accordion--toggle`}>
+            <div className={ toggle ? 'animation--on' : 'animation--off'}>{props.children}</div>
         </div>
 
-        <div className={toggle ? `accordion--toggle ${changeStyleToggle}` : `accordion--toggle toggleNone ${changeStyleToggle}`}>
-          {props.children}
-        </div>
     </div>
   )
 }
