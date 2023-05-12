@@ -27,7 +27,7 @@ export default function Banner(props) {
         className='banner--image'
         alt='paysage montagneux'
         />
-        <h1>{props.text}</h1>
+        <h1>{props.textP1} <br />{props.textP2}</h1>
     </div>
   )
 }

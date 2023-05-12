@@ -14,7 +14,8 @@ export default function Accueil() {
             <Banner
             choiceStyle={'accueil'}
             picture={bannerImg}
-            text={'Chez vous, partout et ailleurs'}
+            textP1={'Chez vous,'}
+            textP2={'partout et ailleurs'}
             />
         </header>
         <main>
@@ -22,10 +23,11 @@ export default function Accueil() {
                 {data.map((item) => {
                     return (
                         <Link
-                        to={{pathname : `logement/${item.id}`}} state={item}
+                        to={{pathname : `logement/${item.id}`}} 
+                        state={item}
+                        key={item.id}
                         >
                             <Card
-                            key={item.id}
                             picture={item.cover}
                             title={item.title}
                             />

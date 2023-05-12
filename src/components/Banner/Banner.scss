@@ -21,15 +21,13 @@
         color: #FFF;
         font-size: 48px;
         position: absolute;
-        margin: 16px;
+        left: 10%;
     }
-    // br {
-    //     display: none;
-    // }
+    br {
+        display: none;
+    }
 }
 
-.accueil, .propos {
-}
 
 @media screen and (max-width: 768px) {
     .banner {
@@ -38,7 +36,7 @@
             height: 111px;
         }
         &--image {
-        border-radius: 10px;
+            border-radius: 10px;
         }
         h1 {
             font-size: 24px;
