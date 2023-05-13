@@ -3,7 +3,6 @@ import './Apropos.scss'
 import Banner from '../../components/Banner/Banner'
 import bannerImg from '../../assets/bannerApropos.jpg'
 import Accordion from '../../components/Accordion/Accordion'
-import data from '../../logements.json'
 
 export default function Apropos() {
   return (
