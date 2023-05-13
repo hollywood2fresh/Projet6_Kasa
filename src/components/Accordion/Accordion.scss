@@ -88,6 +88,7 @@
     }
     .heightLocation, .heightPropos {
         padding: 23px 6px 10px 10px;
-        height: 145px;
+        min-height: 145px;
+        height: fit-content;
     }
 }
