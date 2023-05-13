@@ -74,3 +74,20 @@
 .color {
     background-color: $secondary-color;
 }
+
+@media screen and (max-width: 768px) {
+    .accordion {
+        margin-bottom: 20px;
+        &__fontLocation, &__fontPropos {
+            font-size: 12px;
+            line-height: 17px;
+        } 
+        &--visible {
+            height: 30px;
+        }
+    }
+    .heightLocation, .heightPropos {
+        padding: 23px 6px 10px 10px;
+        height: 145px;
+    }
+}
