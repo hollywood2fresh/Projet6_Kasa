@@ -4,6 +4,7 @@ import Accueil from './Containers/Accueil/Accueil';
 import Logement from './Containers/Logement/Logement'
 import Apropos from './Containers/Apropos/Apropos'
 import Error from './Containers/Error/Error'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/A-Propos" element={<Apropos/>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
+      <Footer/>
     </>
   );
 }

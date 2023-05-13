@@ -4,13 +4,20 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    padding: 0 100px;
     min-width: 380px;
+}
+
+header, main, .navbar {
+    padding: 0 100px;
 }
 
 header, main {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+main {
+    min-height: 650px;
 }
 
 a {
@@ -25,7 +32,10 @@ $star-color: #E3E3E3;
 
 
 @media screen and (max-width: 768px) {
-    body {
+    header, main, .navbar {
         padding: 0 20px;
+    }
+    main {
+        min-height: 505px;
     }
 }
