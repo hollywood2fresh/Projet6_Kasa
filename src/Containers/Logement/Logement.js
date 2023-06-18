@@ -5,12 +5,16 @@ import ProfilLocate from '../../components/ProfilLocate/ProfilLocate'
 import Accordion from '../../components/Accordion/Accordion'
 import {useLocation} from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid';
+import Error from '../Error/Error'
 
 
 export default function Logement() {
 
-  const location = useLocation()
+  let location = useLocation()
 
+  if(location.state === null) {
+    return <Error/>
+  } else
   return (
     <>
         <header>
